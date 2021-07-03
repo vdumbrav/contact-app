@@ -1,0 +1,117 @@
+<h3>{{ data?.id ? "Edit Contact" : "Create contact" }}</h3>
+<form (ngSubmit)="submit()" [formGroup]="form" class="form">
+  <mat-form-field>
+    <input
+      [errorStateMatcher]="matcher"
+      [maxLength]="100"
+      [minLength]="3"
+      formControlName="firstName"
+      matInput
+      placeholder="First Name"
+      required
+      type="text"
+    />
+    <mat-error
+      *ngIf="
+        firstName?.hasError('maxlength') &&
+        !firstName?.hasError('minlength') &&
+        !firstName?.hasError('required')
+      "
+    >
+      The maximum length is 100 characters
+    </mat-error>
+    <mat-error
+      *ngIf="
+        firstName?.hasError('minlength') && !firstName?.hasError('required')
+      "
+    >
+      The minimum length is 3 characters
+    </mat-error>
+    <mat-error *ngIf="firstName?.hasError('required')"
+      >This field is required</mat-error
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      [errorStateMatcher]="matcher"
+      [maxLength]="100"
+      [minLength]="3"
+      formControlName="lastName"
+      matInput
+      placeholder="Last Name"
+      required
+      type="text"
+    />
+    <mat-error
+      *ngIf="
+        lastName?.hasError('maxlength') &&
+        !lastName?.hasError('minlength') &&
+        !lastName?.hasError('required')
+      "
+    >
+      The maximum length is 100 characters
+    </mat-error>
+    <mat-error
+      *ngIf="lastName?.hasError('minlength') && !lastName?.hasError('required')"
+    >
+      The minimum length is 3 characters
+    </mat-error>
+    <mat-error *ngIf="lastName?.hasError('required')"
+      >This field is required</mat-error
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      [errorStateMatcher]="matcher"
+      [maxLength]="12"
+      [minLength]="6"
+      formControlName="phone"
+      matInput
+      placeholder="Phone"
+      required
+      type="text"
+    />
+    <mat-error
+      *ngIf="
+        phone?.hasError('maxlength') &&
+        !phone?.hasError('minlength') &&
+        !phone?.hasError('required')
+      "
+    >
+      The maximum length is 12 characters
+    </mat-error>
+    <mat-error
+      *ngIf="phone?.hasError('minlength') && !phone?.hasError('required')"
+    >
+      The minimum length is 6 characters
+    </mat-error>
+    <mat-error *ngIf="phone?.hasError('required')"
+      >This field is required</mat-error
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      [errorStateMatcher]="matcher"
+      formControlName="email"
+      matInput
+      placeholder="Email"
+      required
+      type="text"
+    />
+    <mat-error *ngIf="email?.hasError('email') && !email?.hasError('required')">
+      Enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="email?.hasError('required')"
+      >This field is required</mat-error
+    >
+  </mat-form-field>
+
+  <button
+    [disabled]="form.invalid"
+    mat-stroked-button
+    color="primary"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
