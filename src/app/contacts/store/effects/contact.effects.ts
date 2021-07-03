@@ -36,7 +36,7 @@ export class ContactEffects {
       return this.actions$.pipe(
         ofType(contactActionTypes.updateContact),
         concatMap((action) =>
-          this._contactsService.editContact(action.update.id, action.update.changes)
+          this._contactsService.editContact(action.update.id.toString(), action.update.changes)
         )
       );
     },

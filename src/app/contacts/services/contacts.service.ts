@@ -29,8 +29,11 @@ export class ContactsService {
     );
   }
 
-  editContact(contactId: string | number, changes: Partial<IContact>): Observable<any> {
-    return this.http.put(this.contactsUrl + contactId, changes);
+  editContact(contactId: string, changes: Partial<IContact>): Observable<any> {
+    return this.http.put(this.contactsUrl + contactId, {
+      id: contactId,
+      ...changes,
+    });
   }
 
   deleteContact(id: string): Observable<any> {

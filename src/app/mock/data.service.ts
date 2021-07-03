@@ -12,7 +12,7 @@ export class DataService implements InMemoryDbService {
     return {
       contacts: [
         {
-          id: 1,
+          id: '1',
           firstName: "Juditha",
           lastName: "Stuchburie",
           email: "jstuchburie0@usgs.gov",
@@ -20,7 +20,7 @@ export class DataService implements InMemoryDbService {
           favourite: false,
         },
         {
-          id: 2,
+          id: '2',
           firstName: "Andree",
           lastName: "Worsam",
           email: "aworsam1@a8.net",
@@ -28,7 +28,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 3,
+          id: '3',
           firstName: "Garold",
           lastName: "Mathers",
           email: "gmathers2@blogspot.com",
@@ -36,7 +36,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 4,
+          id: '4',
           firstName: "Olav",
           lastName: "Small",
           email: "osmall3@pcworld.com",
@@ -44,7 +44,7 @@ export class DataService implements InMemoryDbService {
           favourite: false,
         },
         {
-          id: 5,
+          id: '5',
           firstName: "Dulce",
           lastName: "Cristoferi",
           email: "dcristoferi4@businessweek.com",
@@ -52,7 +52,7 @@ export class DataService implements InMemoryDbService {
           favourite: false,
         },
         {
-          id: 6,
+          id: '6',
           firstName: "Nicolea",
           lastName: "Sprouls",
           email: "nsprouls5@cargocollective.com",
@@ -60,7 +60,7 @@ export class DataService implements InMemoryDbService {
           favourite: false,
         },
         {
-          id: 7,
+          id: '7',
           firstName: "Georgette",
           lastName: "Gibard",
           email: "ggibard6@networksolutions.com",
@@ -68,7 +68,7 @@ export class DataService implements InMemoryDbService {
           favourite: false,
         },
         {
-          id: 8,
+          id: '8',
           firstName: "Gaylene",
           lastName: "Gilders",
           email: "ggilders7@squidoo.com",
@@ -76,7 +76,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 9,
+          id: '9',
           firstName: "Pansie",
           lastName: "Van Der Straaten",
           email: "pvanderstraaten8@pcworld.com",
@@ -84,7 +84,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 10,
+          id: '10',
           firstName: "Querida",
           lastName: "O'Callaghan",
           email: "qocallaghan9@com.com",
@@ -92,7 +92,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 11,
+          id: '11',
           firstName: "Mycah",
           lastName: "Senter",
           email: "msentera@mac.com",
@@ -100,7 +100,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 12,
+          id: '12',
           firstName: "Dunn",
           lastName: "Gregoriou",
           email: "dgregorioub@umn.edu",
@@ -108,7 +108,7 @@ export class DataService implements InMemoryDbService {
           favourite: false,
         },
         {
-          id: 13,
+          id: '13',
           firstName: "Alley",
           lastName: "Slay",
           email: "aslayc@google.co.jp",
@@ -116,7 +116,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 14,
+          id: '14',
           firstName: "Keelia",
           lastName: "Eadmeades",
           email: "keadmeadesd@msu.edu",
@@ -124,7 +124,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 15,
+          id: '15',
           firstName: "Pace",
           lastName: "Kincey",
           email: "pkinceye@linkedin.com",
@@ -132,7 +132,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 16,
+          id: '16',
           firstName: "Jerad",
           lastName: "Androsik",
           email: "jandrosikf@tmall.com",
@@ -140,7 +140,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 17,
+          id: '17',
           firstName: "Selma",
           lastName: "Marchelli",
           email: "smarchellig@ucoz.ru",
@@ -148,7 +148,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 18,
+          id: '18',
           firstName: "Sile",
           lastName: "Goley",
           email: "sgoleyh@google.nl",
@@ -156,7 +156,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 19,
+          id: '19',
           firstName: "Chalmers",
           lastName: "Olczak",
           email: "colczaki@yandex.ru",
@@ -164,7 +164,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 20,
+          id: '20',
           firstName: "Gayle",
           lastName: "Kemish",
           email: "gkemishj@springer.com",
@@ -172,7 +172,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 21,
+          id: '21',
           firstName: "Michaelina",
           lastName: "Espadate",
           email: "mespadatek@ed.gov",
@@ -180,7 +180,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 22,
+          id: '22',
           firstName: "Luella",
           lastName: "Kerne",
           email: "lkernel@nyu.edu",
@@ -188,7 +188,7 @@ export class DataService implements InMemoryDbService {
           favourite: true,
         },
         {
-          id: 23,
+          id: '23',
           firstName: "Codee",
           lastName: "Frangione",
           email: "cfrangionem@furl.net",

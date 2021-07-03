@@ -140,7 +140,7 @@ export class ContactsListComponent implements OnInit, OnDestroy {
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
         this.store.dispatch(
-          contactActionTypes.deleteContact({ contactId: contact.id.toString() })
+          contactActionTypes.deleteContact({ contactId: contact.id })
         );
       }
     });
