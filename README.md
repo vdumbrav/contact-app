@@ -1,27 +1,30 @@
 # ContactsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+Code Challenge - Contacts App
 
-## Development server
+Technologies to be used:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular (v9+) & Material
+- NGRx store & Rxjs
 
-## Code scaffolding
+The app will have one page, the Contacts Page.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Contact entity contains: firstName, lastName, email, phone, favourite.
 
-## Build
+Contacts Page needs to contain:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- header with search field + Add Contact button
+- table with contacts:
+  - columns for each field + Actions for Edit/Delete
+  - favourite column with star icon and option to toggle the favourite field
+  - Add/Edit Contact dialog
+  - confirm Delete Contact dialog
 
-## Running unit tests
+All CRUD actions need to be linked to store;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The following should be used:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- lazy loaded modules
+- reactive forms ( + validators for email/phone )
+- use of interfaces/services
+- use of store
