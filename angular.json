@@ -106,9 +106,21 @@
           "options": {
             "browserTarget": "contacts-app:build"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "contacts-app"
+  "defaultProject": "contacts-app",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
